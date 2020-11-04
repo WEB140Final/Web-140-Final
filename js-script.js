@@ -1,1 +1,1 @@
-window.alert("Error");
+window.alert("Javascript Example: Error 404");
