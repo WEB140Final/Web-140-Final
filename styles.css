@@ -42,3 +42,8 @@ p {
   overflow: hidden;
   background-color: #f1f1f1;
 }
+table {
+    background-color:lightgray;
+    text-align: left;
+    
+}
