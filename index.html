@@ -186,9 +186,35 @@ When Cosmetology students leave the laboratory, they must clock out. To earn hou
         </table>
 
     </div> 
+    
+    <button type="button" class="collapsible-two"><h1>Suggested Sequence of Courses</h1></button>
+    <div class="content">
+        <table style="width: 100%">
+            <P>Some courses are split over more than one term and are offered in the evening. Both the AB and BB secions of the course must be completed to earn full course credit.</P>
+            <tr>
+                <th></th>
+            </tr>
+        </table>
+    </div>
   
 <script>//Allows for collapsible 
 var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>//Allows for collapsible on the second collapse
+var coll = document.getElementsByClassName("collapsible-two");
 var i;
 
 for (i = 0; i < coll.length; i++) {
