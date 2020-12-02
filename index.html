@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    
+
 <head>
     <!-- Required Meta Tags-->
     <meta charset="utf-8">
@@ -38,10 +38,78 @@ When Cosmetology students leave the laboratory, they must clock out. To earn hou
     
 <button type="button" class="collapsible">Program Requirments</button>
     <div class="content">
-        <p>Text</p>
+        <table style="width: 100%">
+            <tr>
+                <th>Course Name</th>
+                <th>Class Hours</th>
+                <th>Lab Hours</th>
+                <th>Credits</th>
+                <th>Semester Available</th>
+            </tr>
+            <h1>Major Courses</h1>
+            <tr>
+                <td>COS-111 Cosmetology Concepts</td>
+                <td>4</td>
+                <td>0</td>
+                <td>4</td>
+                <td>Fall, Spring, Summer</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        
+        
+        </table>
     </div> 
   
-    
+<script>//Allows for collapsible 
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 
     
 <!--BootStrap Documentation-->   
