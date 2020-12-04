@@ -111,7 +111,28 @@ head {
     
 }
 .brand {
+    background-image:url(college.jpg);
+    width:100%;
+    height: 300px;
+}
+.cosmetology-img {
+    width: 80%;
+}
+.apply-now {
+    color:yellow;
     background-color:black;
+}
+.apply-now:hover {
+    background-color: slategray;
+}
+
+.ask-a-question {
+    color:yellow;
+    background-color:black;
+}
+.ask-a-question:hover {
+    color:yellow;
+    background-color:slategray;
 }
 
 body {
@@ -164,4 +185,9 @@ th {
 tr:nth-child(even)
 {
     background-color:white;
+}
+.footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
 }
