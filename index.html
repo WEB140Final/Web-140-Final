@@ -17,12 +17,35 @@
     <!--Javascript Will go here -->
     <script src="js-script.js"></script>
     
+    <div class="brand">
+        <img src="CCC-Logo-dropshadow.png" style="width: 50%">
+    </div>
+    <!-- TopNav bar -->
+    <div id="navbar">
+        <div class="topnav">
+            <a class="active" href="#">Programs</a>
+            <a href="#">Job Skills</a>
+            <a href="#">Personal Enrichment</a>
+            <a href="#">Dual Enrollment</a>
+            <a href="#">Finish HighSchool</a>
+            <a href="#">All Courses</a>
+            <a href="#">Login</a>
+                <div class="search-container">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+        </div> 
+    </div>
+    
+    
 </head>
     
  <body>
      
 <main>
+    <div class="flex-container">
     
+    <div class="main-content">
     <h1>Cosmetology Diploma (D55140)</h1>
     
     <p>The Cosmetology curriculum is designed to provide competency-based knowledge, scientific/artistic principles, and hands-on fundamentals associated with the cosmetology industry. The curriculum provides a simulated salon environment which enables students to develop manipulative skills.
@@ -33,8 +56,8 @@ Graduates should qualify to sit for the North Carolina State Board of Cosmetic A
 
 All applicants for a diploma in cosmetology must have completed all courses, 1500 hours (as specified), and live performances and mannequin services. Students must have an overall average of 2.0 or higher to receive the certificate.
 
-When Cosmetology students leave the laboratory, they must clock out. To earn hours in Cosmetology, students must be physically present in the laboratory.</p>
-    
+When Cosmetology students leave the laboratory, they must clock out. To earn hours in Cosmetology, students must be physically present in the laboratory.</p></div>
+    <div class="tables">
     <h1>Program Requirments</h1>
     <button type="button" class="collapsible"><h1>Course and Hour Requirments</h1></button>
     <div class="content">
@@ -150,7 +173,7 @@ When Cosmetology students leave the laboratory, they must clock out. To earn hou
                 <td>3</td>
                 <td>Fall, Spring, Summer</td>
             </tr>
-            <tr>(COM 110 or higher)</tr>
+            <tr><td>(COM 110 or higher)</td></tr>
             <tr>
                 <td>ENG-111 Writing and Inquiry</td>
                 <td>3</td>
@@ -312,7 +335,7 @@ When Cosmetology students leave the laboratory, they must clock out. To earn hou
         <p>TOTAL CREDIT HOURS REQUIRED FOR GRADUATION: 41-48</p>
         <p>TOTAL CONNTACT HOURS REQUIRED BY THE NORTH CAROLINA STATE BOARD OF COSMETIC ART EXAMINERS:1500</p>
     </div>
-  
+  </div>
 <script>//Allows for collapsible 
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -345,11 +368,28 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
+    
+<!-- Sticky TopNav Script -->
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 
     
 <!--BootStrap Documentation-->   
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</div>        
 </main><!--End of Body-->
      
 </body>   
