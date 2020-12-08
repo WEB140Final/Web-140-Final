@@ -12,13 +12,20 @@
     <!-- CSS StyleSheet -->
     <link rel="stylesheet" href="styles.css">
     
-    <title>Cosmetology Diploma (D55140)</title>
-    
     <!--Javascript Will go here -->
     <script src="js-script.js"></script>
+    
+    <!--React Scripts-->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    
+    <title>Cosmetology Diploma (D55140)</title>
+    
     <div class="brand">
         <a href="https://www.clevelandcc.edu/"><img src="CCC-Logo-dropshadow.png" style="width: 30%" alt="Cleveland Community College Logo"></a>
     </div>
+    
     <!-- TopNav bar -->
     <div id="navbar">
         <div class="topnav">
@@ -41,14 +48,28 @@
     
 </head>
     
- <body>
+ <body>  
      <button onclick="darkMode()">Dark Mode</button>
          
 <main>
     <div class="flex-container">
  
     <div class="main-content">
-    <h1>Cosmetology Diploma (D55140)</h1>
+<!--React to Display the Page Title-->
+    <div id="pageTitle"></div>
+
+    <script type="text/babel">
+      class Cosmet extends React.Component {
+        render() {
+          return <h1>Cosmetology Diploma (D55140)</h1>
+        }
+      }
+
+      ReactDOM.render(<Cosmet />, document.getElementById('pageTitle'))
+    </script>
+<!--END OF REACT-->
+        
+    <h1 id="pageTitle"></h1>
     
     <p>The Cosmetology curriculum is designed to provide competency-based knowledge, scientific/artistic principles, and hands-on fundamentals associated with the cosmetology industry. The curriculum provides a simulated salon environment which enables students to develop manipulative skills.
 
