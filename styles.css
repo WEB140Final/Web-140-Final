@@ -131,7 +131,7 @@
     height: 300px;
 }
 .cosmetology-img {
-    width:40vw;
+    width:35vw;
     min-width: 1vw;
     height: auto;
 }
@@ -203,7 +203,7 @@ tr:nth-child(even)
     background-color:white;
 }
 .footer {
-    background-color: #0070ad;
+    background-color:#02447e;
     text-align: center;
     color:white;
     padding: 10px;
