@@ -66,6 +66,9 @@
     .search-bar {
         min-height: 48px;
     }
+    .sticky {
+        visibility: collapse;
+    }
 }
 
 #navbar {
