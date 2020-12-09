@@ -66,6 +66,35 @@
       }
 
       ReactDOM.render(<Cosmet />, document.getElementById('pageTitle'))
+
+        
+ 
+        const e = React.createElement;
+
+        class Apply extends React.Component {
+            constructor(props) {
+            super(props);
+            this.state = { clicked: false };
+     }
+
+        render() {
+            if (this.state.clicked) {
+            return 'Applying in Progress';
+        }
+
+            return (
+                <button style={{color: "yellow", backgroundColor: "black"}} onClick={() => this.setState({ clicked: true })}>
+                     Apply
+                </button>
+          );
+         }
+        }
+
+const domContainer = document.querySelector('.apply-now');
+ReactDOM.render(e(Apply), domContainer);
+
+      
+
     </script>
 <!--END OF REACT-->
         
@@ -84,7 +113,7 @@ When Cosmetology students leave the laboratory, they must clock out. To earn hou
         <img class="cosmetology-img" src="cosmo.jpg">
         <div class="buttons">
             <button type="button" class="ask-a-question">Ask a Question</button>
-            <button type="button" class="apply-now">Apply Now!</button>
+            <a href="Apply Now.html" target="_blank"><button type="button" class="apply-now">Apply Now!</button></a>
         </div>
     <h1>Program Requirments</h1>
     <button type="button" class="collapsible"><h1>Course and Hour Requirments</h1></button>
@@ -413,7 +442,7 @@ function myFunction() {
 }
 </script>
 
-    
+ 
 <!--BootStrap Documentation-->   
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
