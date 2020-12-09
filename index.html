@@ -66,6 +66,33 @@
       }
 
       ReactDOM.render(<Cosmet />, document.getElementById('pageTitle'))
+      const e = React.createElement;
+
+    class Apply extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = { clicked: false };
+            this.handleClick = this.handleClick.bind(this);
+        }
+        handleClick(){
+            this.setState({ clicked: true });
+            window.open('ApplyNow.html')
+        }
+        
+        render() {
+            if (this.state.clicked) {
+                return 'Applying in Progress!';
+            }
+            
+            return (
+                <button style={{color: "#679c2b", backgroundColor: "black", width: '150px' }} onClick={ this.handleClick }>
+                    Apply Now!
+        </button>
+            );
+        }
+    }
+const domContainer = document.querySelector('.applynow');
+ReactDOM.render(e(Apply), domContainer);
     </script>
 <!--END OF REACT-->
         
@@ -83,8 +110,8 @@ When Cosmetology students leave the laboratory, they must clock out. To earn hou
     <div class="tables">
         <img class="cosmetology-img" src="cosmo.jpg" alt="Cosmetology Students">
         <div class="buttons">
-            <button type="button" class="ask-a-question">Ask a Question</button>
-            <button type="button" class="apply-now">Apply Now!</button>
+            
+            <div class = "applynow"></div>
         </div>
     <h1>Program Requirments</h1>
     <button type="button" class="collapsible"><h1>Course and Hour Requirments</h1></button>
