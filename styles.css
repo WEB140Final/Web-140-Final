@@ -21,7 +21,7 @@
     color:black;
 }
 .topnav a.active {
-    background-color:#679c2b;
+    background-color:#0270ad;
     color:white;
 }
 .topnav .search-container {
@@ -62,6 +62,9 @@
     }
     .topnav input[type="text"] {
         border: 1px solid #ccc;
+    }
+    .search-bar {
+        min-height: 48px;
     }
 }
 
