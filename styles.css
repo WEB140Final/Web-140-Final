@@ -3,6 +3,10 @@
     padding:0;
     margin:0;
 }
+.logo {
+    width: 40vw;
+    height: auto;
+}
 
 .topnav {
     background-color:#02447e;
@@ -69,6 +73,13 @@
     .sticky {
         visibility: collapse;
     }
+    .logo{
+        width: 80vw;
+        height: auto;
+    }
+    .cosmetology-img {
+        visibility: collapse;
+    }
 }
 
 #navbar {
@@ -114,11 +125,15 @@
 
 .brand {
     background-image:url(college.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     width:100%;
     height: 300px;
 }
 .cosmetology-img {
-    width: 80%;
+    width:40vw;
+    min-width: 1vw;
+    height: auto;
 }
 .apply-now {
     color:yellow;
