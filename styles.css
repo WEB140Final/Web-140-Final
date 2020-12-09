@@ -3,10 +3,6 @@
     padding:0;
     margin:0;
 }
-.logo {
-    width: 40vw;
-    height: auto;
-}
 
 .topnav {
     background-color:#02447e;
@@ -25,7 +21,7 @@
     color:black;
 }
 .topnav a.active {
-    background-color:#0270ad;
+    background-color:#679c2b;
     color:white;
 }
 .topnav .search-container {
@@ -66,19 +62,6 @@
     }
     .topnav input[type="text"] {
         border: 1px solid #ccc;
-    }
-    .search-bar {
-        min-height: 48px;
-    }
-    .sticky {
-        visibility: collapse;
-    }
-    .logo{
-        width: 80vw;
-        height: auto;
-    }
-    .cosmetology-img {
-        visibility: collapse;
     }
 }
 
@@ -125,15 +108,11 @@
 
 .brand {
     background-image:url(college.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     width:100%;
     height: 300px;
 }
 .cosmetology-img {
-    width:35vw;
-    min-width: 1vw;
-    height: auto;
+    width: 80%;
 }
 .apply-now {
     color:yellow;
@@ -203,9 +182,8 @@ tr:nth-child(even)
     background-color:white;
 }
 .footer {
-    background-color:#02447e;
+    background-color: #F1F1F1;
     text-align: center;
-    color:white;
     padding: 10px;
 }
 
