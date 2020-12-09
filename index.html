@@ -4,8 +4,7 @@
 <head>
     <!-- Required Meta Tags-->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
-    <meta name="description" content="Cleveland Community Colleges Cosmetology Page"/>
+    <meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=yes">
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -24,7 +23,7 @@
     <title>Cosmetology Diploma (D55140)</title>
     
     <div class="brand">
-        <a href="https://www.clevelandcc.edu/"><img src="CCC-Logo-dropshadow.png" class="logo" alt="Cleveland Community College Logo"></a>
+        <a href="https://www.clevelandcc.edu/"><img src="CCC-Logo-dropshadow.png" style="width: 30%" alt="Cleveland Community College Logo"></a>
     </div>
     
     <!-- TopNav bar -->
@@ -37,19 +36,20 @@
             <a href="#">Finish HighSchool</a>
             <a href="#">All Courses</a>
             <a href="#">Login</a>
-            <a href="#"><button onclick="darkMode()" alt="Dark Mode Button">Dark Mode</button></a>
                 <div class="search-container">
                     <form class="example" action="#">
-                        <input type="text" placeholder="Search..." alt="Search Bar" aria-label="Search Bar">
-                         <button type="submit" alt="Search Button" aria-label="Search Button" class="search-bar"><i class="fa fa-search"></i></button>
+                        <input type="text" placeholder="Search...">
+                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
             </div>
         </div> 
     </div>
     
+    
 </head>
     
  <body>  
+     <button onclick="darkMode()">Dark Mode</button>
          
 <main>
     <div class="flex-container">
@@ -66,6 +66,48 @@
       }
 
       ReactDOM.render(<Cosmet />, document.getElementById('pageTitle'))
+
+        
+ 
+        const e = React.createElement;
+
+        class Apply extends React.Component {
+            constructor(props) {
+            super(props);
+            this.state = { clicked: false };
+
+
+            this.handleClick = this.handleClick.bind(this);
+
+     }
+
+        handleClick(){
+            this.setState({ clicked: true });
+
+            window.open('ApplyNow.html')
+
+
+        }
+
+
+        render() {
+            if (this.state.clicked) {
+            return 'Applying in Progress!';
+        }
+
+            return (
+                <button style={{color: "#679c2b", backgroundColor: "black", width: '150px' }} onClick={ this.handleClick }>
+                     Apply Now!
+                </button>
+          );
+         }
+        }
+
+const domContainer = document.querySelector('.applynow');
+ReactDOM.render(e(Apply), domContainer);
+
+      
+
     </script>
 <!--END OF REACT-->
         
@@ -81,10 +123,10 @@ All applicants for a diploma in cosmetology must have completed all courses, 150
 
 When Cosmetology students leave the laboratory, they must clock out. To earn hours in Cosmetology, students must be physically present in the laboratory.</p></div>
     <div class="tables">
-        <img class="cosmetology-img" src="cosmo.jpg" alt="Cosmetology Students">
+        <img class="cosmetology-img" src="cosmo.jpg">
         <div class="buttons">
-            <button type="button" class="ask-a-question">Ask a Question</button>
-            <button type="button" class="apply-now">Apply Now!</button>
+            
+            <div class = "applynow" style = ></div>
         </div>
     <h1>Program Requirments</h1>
     <button type="button" class="collapsible"><h1>Course and Hour Requirments</h1></button>
@@ -413,37 +455,17 @@ function myFunction() {
 }
 </script>
 
-    
+ 
 <!--BootStrap Documentation-->   
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-</div><!--END OF TABLES-->        
-</div><!--END OF WRAPPER-->
-</main><!--END OF MAIN-->
-</body><!--End of Body-->
-
-  
+</div>        
+</main><!--End of Body-->
+</div><!--End of Wrapper-->
+</body>   
     
     <footer class="footer">
-        <section class="widget nav_menu-2 widget_nav_menu"><ul id="menu-footer-nav" class="menu"><li class="menu-item menu-about-us"><a href="https://clevelandcc.edu/about-us/">About Us</a></li>
-            <li class="menu-item menu-academic-bulletin-student-handbook"><a href="http://clevelandcc.smartcatalogiq.com/">Academic Bulletin &amp; Student Handbook</a></li>
-            <li class="menu-item menu-board-of-trustees"><a href="http://go.boarddocs.com/nc/clevelandcc/Board.nsf/Public">Board of Trustees</a></li>
-            <li class="menu-item menu-brown-emergency-training-center"><a href="https://clevelandcc.edu/betc/">Brown Emergency Training Center</a></li>
-            <li class="menu-item menu-c19tv"><a href="http://www.c19.tv">C19TV</a></li>
-            <li class="menu-item menu-ccc-foundation"><a href="http://clevelandccfoundation.org/">CCC Foundation</a></li>
-            <li class="menu-item menu-college-store"><a href="https://www.bkstr.com/clevelandccstore/home">College Store</a></li>
-            <li class="menu-item menu-consumer-information"><a href="https://clevelandcc.edu/consumer-information/">Consumer Information</a></li>
-            <li class="menu-item menu-contact-us"><a href="https://clevelandcc.edu/contact-us/">Contact Us</a></li>
-            <li class="menu-item menu-cosmetology-and-esthetics-spa"><a href="https://clevelandcc.edu/cosmetology-esthetics-spa/">Cosmetology and Esthetics Spa</a></li>
-            <li class="menu-item menu-directory"><a href="/directory/">Directory</a></li>
-            <li class="menu-item menu-employment"><a target="_blank" rel="noopener noreferrer" href="https://clevelandcc.peopleadmin.com/">Employment</a></li>
-            <li class="menu-item menu-maps-directions"><a href="https://clevelandcc.edu/maps-directions/">Maps &amp; Directions</a></li>
-            <li class="menu-item menu-ncworks-job-board"><a href="https://clevelandcc.edu/job-board/">NCWorks Job Board</a></li>
-            <li class="menu-item menu-pennington-mcintyre-gallery"><a href="https://clevelandcc.edu/pennington-mcintyre-gallery/">Pennington-McIntyre Gallery</a></li>
-            <li class="menu-item menu-policies-and-procedures"><a href="http://go.boarddocs.com/nc/clevelandcc/Board.nsf/goto?open&amp;id=BGL2ZF049A37">Policies and Procedures</a></li>
-            <li class="menu-item menu-rose-library"><a href="https://library.clevelandcc.edu">Rose Library</a></li>
-            <li class="menu-item menu-veterans"><a href="/veterans-affairs/">Veterans</a></li>
-            <li class="menu-item menu-cccalert"><a href="https://clevelandcc.edu/cccalert/">cccAlert</a></li>
-            </ul></section></footer>
+        Footer Here
+    </footer>
 
 </html><!--End of Document-->
