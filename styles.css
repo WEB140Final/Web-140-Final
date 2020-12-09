@@ -203,8 +203,9 @@ tr:nth-child(even)
     background-color:white;
 }
 .footer {
-    background-color: #F1F1F1;
+    background-color: #0070ad;
     text-align: center;
+    color:white;
     padding: 10px;
 }
 
